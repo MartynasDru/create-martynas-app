@@ -1,0 +1,22 @@
+{
+  "name": "@martynasdd/create-martynas-app",
+  "version": "1.0.0",
+  "description": "Create Martynas App",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartynasDru/create-martynas-app.git"
+  },
+  "author": "Martynas Druteika",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartynasDru/create-martynas-app/issues"
+  },
+  "homepage": "https://github.com/MartynasDru/create-martynas-app",
+  "bin": {
+    "create-martynas-app": "./index.js"
+  },
+  "dependencies": {
+    "fs-extra": "^10.0.0"
+  }
+}
