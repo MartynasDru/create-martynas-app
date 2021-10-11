@@ -1,7 +1,8 @@
 const fse = require("fs-extra");
 const fs = require("fs");
 const path = require("path");
-const chalk = require("chalk")
+const chalk = require("chalk");
+const { execSync } = require("child_process")
 
 const [,, ...args] = process.argv
 const projectName = args[0];
@@ -14,8 +15,8 @@ const init = () => {
   } else {
     copyTemplate();
     setupPackageJSON();
-
-    console.log(chalk.green(`Project ${projectName} setup finished!`));
+    installPackages();
+    success();
   }
 }
 
@@ -42,6 +43,14 @@ function setupPackageJSON() {
   packageJSON.name = projectName;
 
   fs.writeFileSync(`${projectDir}/package.json`, JSON.stringify(packageJSON, null, 2));
+}
+
+function installPackages() {
+  execSync(`npm install --prefix ${projectDir}`, { stdio: "inherit" });
+}
+
+function success() {
+  console.log(chalk.green(`Project ${projectName} setup finished!`));
 }
 
 module.exports = {
