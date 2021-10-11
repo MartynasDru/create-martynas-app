@@ -7,9 +7,6 @@
     "type": "git",
     "url": "git+https://github.com/MartynasDru/create-martynas-app.git"
   },
-  "scripts": {
-    "publish": "npm publish --access public"
-  },
   "author": "Martynas Druteika",
   "license": "ISC",
   "bugs": {
