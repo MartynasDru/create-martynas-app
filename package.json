@@ -1,11 +1,14 @@
 {
   "name": "@martynasdd/create-martynas-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create Martynas App",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MartynasDru/create-martynas-app.git"
+  },
+  "scripts": {
+    "publish": "npm publish --access public"
   },
   "author": "Martynas Druteika",
   "license": "ISC",
