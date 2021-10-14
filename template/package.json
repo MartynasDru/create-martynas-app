@@ -5,7 +5,7 @@
   "author": "Martynas Druteika",
   "scripts": {
     "build": "webpack --mode=development",
-    "dev": "webpack-dev-server",
+    "start": "webpack-dev-server",
     "test": "jest"
   },
   "dependencies": {
